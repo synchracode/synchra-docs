@@ -13,6 +13,7 @@ export default defineConfig({
             logo: {
                 src: './src/assets/tree.svg',
             },
+            favicon: '/favicon.ico',
             sidebar: [
                 {
                     label: 'Getting started',
