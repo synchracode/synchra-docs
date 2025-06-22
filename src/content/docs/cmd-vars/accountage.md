@@ -2,14 +2,26 @@
 title: Accountage
 ---
 
-`{accountage}`
+These variables let you show when a user’s account was created, or how long it has existed.
 
-Example response: `5 years 8 months 13 days 2 hours`
+### `{accountage}`  
+Displays the full age of the user’s account in years, months, days, and hours.
 
-`{accountage_date}`
+**Example response:**  
+`5 years 8 months 13 days 2 hours`
 
-Example response: `2013-06-03`
+---
 
-`{accountage_datetime}`
+### `{accountage_date}`  
+Shows the exact date the account was created (in `YYYY-MM-DD` format).
 
-Example response: `2013-06-03 19:12:02 UTC`
+**Example response:**  
+`2013-06-03`
+
+---
+
+### `{accountage_datetime}`  
+Shows the full date and time the account was created (in UTC).
+
+**Example response:**  
+`2013-06-03 19:12:02 UTC`

@@ -4,14 +4,43 @@ sidebar:
     order: 2
 ---
 
-## User
+## User Variables
 
-`{user}`
+### `{user}` – Mentioned User or First Argument
 
-Defaults to the user that triggered the command or the user mentioned in the first argument of the command `!test ErlePerle`.
+This variable refers to the user mentioned as the first argument when someone uses a command.
 
-## Sender
+If no user is mentioned, it defaults to the person who triggered the command.
 
-`{sender}`
+**Example:**
 
-Name of the user that triggered the command.
+- **Command:** `!greet`
+- **Response:** `Hello, {user}! Hope you're having a good day.`
+
+**Usage:**
+
+- If someone types `!greet ErlePerle`, the bot will respond with:  
+  `Hello, ErlePerle! Hope you're having a good day.`
+
+- If someone just types `!greet`, the bot will respond with:  
+  `Hello, [their own name]! Hope you're having a good day.`
+
+---
+
+### `{sender}` – Command Sender
+
+This variable always refers to the person who triggered the command, no matter what other input is given.
+
+**Example:**
+
+- **Command:** `!requestedby`
+- **Response:** `This was requested by {sender}.`
+
+**Usage:**
+
+- If someone types `!requestedby`, the bot will respond with:  
+  `This was requested by [SenderName].`
+
+- If someone types `!requestedby AnotherUser`, it will still say:  
+  `This was requested by [SenderName].`
+

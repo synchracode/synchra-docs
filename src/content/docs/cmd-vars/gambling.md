@@ -3,18 +3,22 @@ id: gambling
 title: Gambling
 ---
 
-## Slots
+These variables are used to activate and show results from the built-in gambling games.
 
-Used to activate the slots game.
+---
 
-`{gamble_slots}`
+### Slots
 
-Returns the defined win/lose message.
+**Activate the slots game:**  
+Use `{gamble_slots}` in your command response to trigger the slots game.
 
-## Roulette
+The bot will return the predefined win or lose message based on the game result.
 
-Used to activate the roulette game.
+---
 
-`{gamble_roulette}`
+### Roulette
 
-Returns the defined win/lose message.
+**Activate the roulette game:**  
+Use `{gamble_roulette}` in your command response to trigger the roulette game.
+
+The bot will return the predefined win or lose message based on the game result.

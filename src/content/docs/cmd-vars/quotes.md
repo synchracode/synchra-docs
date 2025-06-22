@@ -2,45 +2,66 @@
 title: Quotes
 ---
 
-## Add a quote
+## Manage quotes
 
-`{quote.add}`
+### `{quote.add}`
 
-Adds a quote and returns "Quote created with number: x".  
-Syntax: !command message
+Adds a quote and returns:  
+`Quote created with number: x`  
+**Syntax:** `!<cmd> the quote here`
 
+---
 
-## Edit a quote
+### `{quote.edit}`
 
-`{quote.edit}`
+Edits a quote and returns:  
+`Quote updated`  
+**Syntax:** `!<cmd> <number> the new quote here`
 
-Edit a quote a quote and returns "Quote updated".  
-Syntax: !command number message
+---
 
+### `{quote.delete}`
 
-## Delete a quote
+Deletes a quote and returns:  
+`Quote deleted`  
+**Syntax:** `!<cmd> <number>`
 
-`{quote.delete}`
-
-Delete a quote. Returns "Quote deleted".  
-Syntax: !command number
-
+---
 
 ## Display a quote
 
-`{quote.message}`
+Using `!<cmd>` without a number returns a **random** quote.  
+If a number is provided as the first argument, it returns that specific quote.
 
-Returns the quote.
+**Syntax:** `!<cmd> [number]`
 
-`{quote.number}`
+### Full example command
+**Command:** `!quote` 
+**Response:**  
+```
+"{quote.message}" ({quote.date}, id: {quote.number}, by: {quote.user})
+```
 
-Returns the quote number.
+---
 
-`{quote.user}`
+### `{quote.message}`
 
-Returns the name of the user who added the quote.
+Returns the **quote message**.
 
-`{quote.date}`
+---
 
-Returns the date when the quote was added.
+### `{quote.number}`
 
+Returns the **quote number**.
+
+---
+
+### `{quote.user}`
+
+Returns the **user** who added the quote.
+
+---
+
+### `{quote.date}`
+
+Returns the **date** when the quote was added.

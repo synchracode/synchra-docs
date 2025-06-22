@@ -1,48 +1,78 @@
 ---
 title: Faceit
 ---
+These variables let you display a user’s Faceit stats like level and ELO.
 
-Example usage:
+### Full Example Command
 
-`@{user}, Faceit level: {faceit.level} ({faceit.elo} elo) - {faceit.next_level_points} elo needed for next level {faceit.username ErlePerle}`
+**Command:** `!faceit`  
+**Response:**
 
+    Faceit level: {faceit.level} ({faceit.elo} elo) – {faceit.next_level_points} elo needed for level {faceit.next_level}
+    {faceit.username YourFaceitUsername}
 
-## faceit.username
+---
 
-Set the name of the faceit user to lookup
+### `{faceit.username [name]}`
 
-`{faceit.username ErlePerle}`
+Use this to tell the bot which Faceit user to look up.
 
-Returns an empty string.
+- You can hardcode a username like this: `{faceit.username YourFaceitUsername}`
 
-## faceit.elo
+**Note:** This variable doesn't return anything on its own — it's just used to tell the bot who to look up.
 
-The user's current elo.
+**Example:**
 
-`{faceit.elo}`
+    Faceit level: {faceit.level} ({faceit.elo} elo) {faceit.username YourFaceitUsername}`}
 
-Example response: `1024`
+---
 
-## faceit.level
+### `{faceit.elo}`
 
-The user's current level.
+Shows the user's current Faceit ELO rating.
 
-`{faceit.level}`
+**Example:**
 
-Example response: `6`
+    ELO: {faceit.elo}
 
-## faceit.next_level_points
+**Response:**  
+`ELO: 1024`
 
-The amount of points needed for the next level.
+---
 
-`{faceit.next_level_points}`
+### `{faceit.level}`
 
-Example response: `106`
+Shows the user's Faceit level (from 1 to 10).
 
-## faceit.next_level
+**Example:**
 
-The name of the next level.
+    Level: {faceit.level}
 
-`{faceit.next_level}`
+**Response:**  
+`Level: 6`
 
-Example response: `7`
+---
+
+### `{faceit.next_level_points}`
+
+Shows how many more ELO points the user needs to reach the next Faceit level.
+
+**Example:**
+
+    {faceit.next_level_points} ELO needed to reach level {faceit.next_level}
+
+**Response:**  
+`106 ELO needed to reach level 7`
+
+---
+
+### `{faceit.next_level}`
+
+Shows the next Faceit level the user is working toward.
+
+**Example:**
+
+    Next level: {faceit.next_level}
+
+**Response:**  
+`Next level: 7`

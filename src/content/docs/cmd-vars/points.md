@@ -2,49 +2,60 @@
 title: Points
 ---
 
-## Points name
+---
 
-`{points_name}`
+### `{points_name}`
+Returns the name of the points used in the system.  
+**Example response:**  
+`DXP`
 
-Returns name of the points.
+---
 
-## User points
+### `{points}`
+Returns the amount of points a user currently has.  
+**Example response:**  
+`150`
 
-`{points}`
+---
 
-Returns the user's amount of points.
+### `{points_rank}`
+Returns the user’s current rank on the points leaderboard.  
+**Example response:**  
+`2`
 
-## User rank
+---
 
-`{points_rank}`
+### `{total_point_users}`
+Returns how many users are currently on the points leaderboard.  
+**Example response:**  
+`5003`
 
-Returns the user's current rank on the leaderboard.
+---
 
-## Total users
+### `{points_ranking}`
+Returns the top 5 users on the points leaderboard.  
+**Example response:**  
 
-`{total_point_users}`
+    1. John - 300 DXP
+    2. Alice - 290 DXP
+    3. Bob - 280 DXP
+    4. Eve - 270 DXP
+    5. Carol - 260 DXP
 
-Returns the number of users on the leaderboard.
+---
 
-## Top Ranking
+### `{give_points}`
+Allows one user to give points to another user.  
+Returns a message showing who gave points to whom.
 
-`{points_ranking}`
+**Example response:**  
+`JohnDoe gave 50 DXP to JaneDoe.`
 
-Returns top 5 of the points leaderboard.
+---
 
-## Give points
+### `{add_points}`
+Allows an admin (or authorized user) to add points to a user from an unlimited pool.  
+Returns a message confirming the points were added to the user.
 
-Allows one user to give to another user.
-
-`{give_points}`
-
-Returns a who gave to whom message.
-
-
-## Add points
-
-Allows, hopefully an admin, to add points to a user from an infinite pool of points.
-
-`{add_points}`
-
-Returns a message to the user that they got points.
+**Example response:**  
+`JaneDoe now has 150 DXP.`

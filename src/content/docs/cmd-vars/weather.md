@@ -2,55 +2,88 @@
 title: Weather
 ---
 
-## Lookup city 
+## Full example command
+**Command:** `!weather`  
+**Response:**
+```
+It's currently {weather.temp}°C in {weather.city} with {weather.description} {weather.lookup_city Stockholm}
+```
 
-Used to set a default lookup city for the command.
+---
 
+### `{weather.lookup_city <city>}`
+
+Sets a default lookup city for the command.  
+Useful when you want the command to always return weather for a specific location.
+
+**Example usage:**  
 `{weather.lookup_city Aarhus}`
 
-Returns an empty string.
+**Returns:**  
+An empty string (used only to set the location, not display it).
 
-## Units
+---
 
-`imperial` for for Fahrenheit.  
-`metric` for for Celsius.
+### `{weather.units metric}` or `{weather.units imperial}`
 
-Default is `metric`.
+Sets the temperature unit system.
 
-`{weather.units metric}`
+- `metric` for Celsius (default)  
+- `imperial` for Fahrenheit
 
-Returns an empty string.
+**Returns:**  
+An empty string (used to change units, not to display them).
 
-## Lookup city 
+---
 
-Used to set a default lookup city for the command.
+### `{weather.temp}`
 
-`{weather.lookup_city <city>}`
+Returns the current temperature.
 
-## Temperature 
+**Example response:**  
+`23`
 
-`{weather.temp}`   
-`{weather.temp_min}`   
-`{weather.temp_max}` 
+---
 
-Example response: `23`
+### `{weather.temp_min}`
 
-## Description
+Returns the minimum temperature forecasted.
 
-`{weather.description}`
+**Example response:**  
+`17`
 
-Example response: `light rain`
+---
 
-## City
+### `{weather.temp_max}`
 
-Name of the city being looked up.
+Returns the maximum temperature forecasted.
 
-`{weather.city}`
+**Example response:**  
+`28`
 
-Example response: `Aarhus`
+---
 
-## Wind speed
+### `{weather.description}`
 
-`{weather.wind_speed}`
+Returns a short description of the current weather.
 
-Example response: `4.6`
+**Example response:**  
+`light rain`
+
+---
+
+### `{weather.city}`
+
+Returns the name of the city currently being looked up.
+
+**Example response:**  
+`Aarhus`
+
+---
+
+### `{weather.wind_speed}`
+
+Returns the current wind speed.
+
+**Example response:**  
+`4.6`
