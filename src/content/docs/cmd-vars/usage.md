@@ -21,7 +21,6 @@ When someone triggers the command, the bot will replace the variable with the co
 | ------------------------------------ | ------------------------------------------------------ | -------------------------------------------------------------- |
 | `{accountage}`                       | Shows how old the user’s account is.                   | `Account created {accountage} ago.`                            |
 | `{countdown 2025-07-01T18:00:00+02}` | Shows how much time is left until a date/time.         | `Only {countdown 2025-07-01T18:00:00+02} until the big event!` |
-| `{weather.lookup_city Aarhus}`       | Shows the current weather in a specific city.          | `Weather in Aarhus: {weather.lookup_city Aarhus}`              |
 | `{spotify.song_name}`                | Shows the name of the current song playing on Spotify. | `Now playing: {spotify.song_name}`                             |
 
 ---
