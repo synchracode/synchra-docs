@@ -11,7 +11,7 @@ export default defineConfig({
         starlight({
             title: 'Synchra Docs',
             logo: {
-                src: './src/assets/tree.svg',
+                src: './src/assets/synchra-logo.svg',
             },
             favicon: '/favicon.ico',
             sidebar: [
