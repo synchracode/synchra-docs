@@ -11,7 +11,7 @@ export default defineConfig({
         starlight({
             title: 'Synchra Docs',
             logo: {
-                src: './src/assets/synchra-logo.svg',
+                src: './src/assets/android-chrome-192x192.png',
             },
             favicon: '/favicon.ico',
             sidebar: [
