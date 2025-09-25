@@ -19,17 +19,10 @@ When someone triggers the command, the bot will replace the variable with the co
 
 | Variable                             | Description                                            | Example                                                        |
 | ------------------------------------ | ------------------------------------------------------ | -------------------------------------------------------------- |
-| `{accountage}`                       | Shows how old the user’s account is.                   | `Account created {accountage} ago.`                            |
+| `{accountage}`                       | Shows how old the user's account is.                   | `Account created {accountage} ago.`                            |
 | `{countdown 2025-07-01T18:00:00+02}` | Shows how much time is left until a date/time.         | `Only {countdown 2025-07-01T18:00:00+02} until the big event!` |
 | `{spotify.song_name}`                | Shows the name of the current song playing on Spotify. | `Now playing: {spotify.song_name}`                             |
 
----
-
-## Tips
-
-- You can mix text and variables freely in your command responses.
-- Make sure the variable format is correct, including any needed input (like a city name or date).
-- If a variable doesn’t return anything, it might mean the bot doesn’t have the data right now (like no song playing on Spotify).
 
 ---
 

@@ -13,16 +13,15 @@ export default defineConfig({
             logo: {
                 src: './src/assets/android-chrome-192x192.png',
             },
-            favicon: '/favicon.ico',
+            favicon: './src/assets/favicon.ico',
             sidebar: [
                 {
                     label: 'Getting started',
-                    items: [
-                        {
-                            label: 'Getting started',
-                            slug: 'getting-started',
-                        },
-                    ],
+                    slug: 'getting-started',
+                },
+                {
+                    label: 'Phrase matching',
+                    autogenerate: { directory: 'phrase-matching' },
                 },
                 {
                     label: 'Command vars',
