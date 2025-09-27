@@ -19,7 +19,7 @@ The Chat Widget can be styled using custom CSS. You can target specific elements
 | `.chat-message-link` | Links within messages |
 | `.chat-message-timestamp` | Message timestamp |
 | `.chat-message-provider-logo` | Platform logo (Twitch, YouTube, etc.) |
-| `.chat-message-meta-container` | Platform, Badges, Timestamp, username conatiner |
+| `.chat-message-meta-container` | Platform, Badges, Timestamp, username - container |
 
 ### CSS Variables
 
