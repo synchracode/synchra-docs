@@ -12,7 +12,7 @@ The Chat Widget can be styled using custom CSS. You can target specific elements
 |-------|-------------|
 | `.chat-message-container` | Individual message container |
 | `.chat-messages-container` | Main container for all chat messages |
-| `.chat-messages-inner-container` | Inner wrapper for chat messages |
+| `.chat-messages-outer-container` | Outer wrapper for chat messages |
 | `.chat-message-text` | The actual message text content |
 | `.chat-message-username` | Username display |
 | `.chat-message-mention` | @mentions within messages |
