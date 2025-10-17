@@ -1,5 +1,6 @@
 // @ts-check
 import starlight from '@astrojs/starlight'
+import umami from '@yeskunall/astro-umami'
 import icon from 'astro-icon'
 import { defineConfig } from 'astro/config'
 
@@ -7,6 +8,10 @@ import { defineConfig } from 'astro/config'
 export default defineConfig({
     site: 'https://docs.synchra.net',
     integrations: [
+        umami({
+            id: '94db1cb1-74f4-4a40-ad6c-962362670409',
+            hostUrl: 'https://a.synchra.net',
+        }),
         icon(),
         starlight({
             title: 'Synchra Docs',
