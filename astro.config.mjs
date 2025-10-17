@@ -9,7 +9,7 @@ export default defineConfig({
     site: 'https://docs.synchra.net',
     integrations: [
         umami({
-            id: '94db1cb1-74f4-4a40-ad6c-962362670409',
+            id: '9157abbf-8bf1-4d5f-82ed-2efad0487764',
             endpointUrl: 'https://a.synchra.net',
         }),
         icon(),
