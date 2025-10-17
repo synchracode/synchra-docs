@@ -10,7 +10,7 @@ export default defineConfig({
     integrations: [
         umami({
             id: '94db1cb1-74f4-4a40-ad6c-962362670409',
-            hostUrl: 'https://a.synchra.net',
+            endpointUrl: 'https://a.synchra.net',
         }),
         icon(),
         starlight({
