@@ -25,10 +25,6 @@ export default defineConfig({
                     slug: 'getting-started',
                 },
                 {
-                    label: 'Phrase matching',
-                    autogenerate: { directory: 'phrase-matching' },
-                },
-                {
                     label: 'Command vars',
                     autogenerate: { directory: 'cmd-vars' },
                 },
