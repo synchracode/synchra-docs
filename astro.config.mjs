@@ -18,7 +18,7 @@ export default defineConfig({
             logo: {
                 src: './src/assets/android-chrome-192x192.png',
             },
-            favicon: './src/assets/favicon.ico',
+            favicon: '/favicon.ico',
             sidebar: [
                 {
                     label: 'Getting started',
