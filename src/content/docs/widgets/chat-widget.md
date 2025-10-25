@@ -2,6 +2,9 @@
 title: Chat Widget
 ---
 
+With Synchra's Chat Widget you can very easily display your multi-chat in OBS or anything else that supports a browser source. It supports Twitch, YouTube, TikTok and Kick.
+You can customize it to your liking with simple settings and custom CSS in the [Dashboard](https://dash.synchra.net/).
+
 ## Custom CSS
 
 The Chat Widget can be styled using custom CSS. You can target specific elements using the classes below and customize appearance.
