@@ -5,12 +5,12 @@ title: Count
 The count variable lets you and your chat keep track of a number that can be increased or decreased with commands.
 Be it deaths, kills, rounds won, times a thing has been written in chat or anything else you can think of.
 
-### `{count.get <counter_name>}`
+### `{count <counter_name>}`
 
 Displays the current count.
 
 **Command:** `!deaths`  
-**Response:** `Streamer has died {count.get deaths} times.`
+**Response:** `Streamer has died {count deaths} times.`
 
 ### `{count.inc <counter_name> [-/+amount]}`
 
