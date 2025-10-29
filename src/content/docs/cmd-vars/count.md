@@ -22,8 +22,8 @@ You can use e.g. `-5` to decrease the count by 5.
 
 ### `{count.set <counter_name> [amount]}`
 
-Sets the count to a specific amount.
-The amount is optional, and can be set with the chat command.
+Sets the count to a specific amount. Use it for example to reset the count to 0.
+The amount can also be specifed in the command itself.
 
 **Command:** `!set_deaths`   
 **Response:** `Death count set to {count.set deaths 0}.`
