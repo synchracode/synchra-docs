@@ -1,5 +1,5 @@
 ---
-title: Watchtime
+title: Viewer stats
 ---
 
 For the users privacy, only they themselves can choose to trigger these variables in commands.
