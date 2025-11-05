@@ -1,9 +1,9 @@
 ---
-id: gambling
-title: Gambling
+id: games
+title: Games
 ---
 
-These variables are used to activate and show results from the built-in gambling games.
+These variables are used to activate and show results from the built-in games.
 
 ---
 
