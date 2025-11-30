@@ -25,6 +25,7 @@ The Chat Widget can be styled using custom CSS. You can target specific elements
 
 | Variable                   | Description             | Example           |
 | -------------------------- | ----------------------- | ----------------- |
+| `--text-color`             | Text color              | `#efeff0`         |
 | `--border-radius`          | Corner roundness        | `8px`             |
 | `--border-color`           | Border color            | `#333`            |
 | `--border-width`           | Border thickness        | `2px`             |
