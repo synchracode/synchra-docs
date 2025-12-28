@@ -35,6 +35,10 @@ export default defineConfig({
                     collapsed: true,
                     autogenerate: { directory: 'widgets' },
                 },
+                {
+                    label: 'Custom Bot Name',
+                    slug: 'custom-bot-name',
+                },
             ],
         }),
     ],
