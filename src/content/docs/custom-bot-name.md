@@ -12,7 +12,7 @@ Copy the link and sign in to your bot account.
 If you are already signed in to your own account we recommend opening another browser, 
 or use a private/incognito window, and paste the URL in the address bar.
 
-Short cuts for private/incognito windows:
+Shortcuts for private/incognito windows:
 
 **Windows / Linux**
   - `Ctrl + Shift + N` → Chrome, Edge, Brave, Opera
