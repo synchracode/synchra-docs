@@ -3,6 +3,7 @@ import starlight from '@astrojs/starlight'
 import umami from '@yeskunall/astro-umami'
 import icon from 'astro-icon'
 import { defineConfig } from 'astro/config'
+import starlightThemeNova from 'starlight-theme-nova'
 
 // https://astro.build/config
 export default defineConfig({
@@ -20,6 +21,16 @@ export default defineConfig({
                 src: './src/assets/android-chrome-192x192.png',
             },
             favicon: '/favicon.ico',
+            plugins: [
+                starlightThemeNova({
+                    nav: [
+                        {
+                            label: 'Dashboard',
+                            href: 'https://dash.synchra.net',
+                        },
+                    ],
+                }),
+            ],
             sidebar: [
                 {
                     label: 'Getting started',
