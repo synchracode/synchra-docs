@@ -6,7 +6,8 @@ import { defineConfig } from 'astro/config'
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://docs.synchra.net',
+    site: 'https://synchra.net',
+    base: '/docs/',
     integrations: [
         umami({
             id: '74183a31-f5c6-48f2-9ed0-02667780c01e',
