@@ -27,10 +27,12 @@ export default defineConfig({
                 },
                 {
                     label: 'Command vars',
+                    collapsed: true,
                     autogenerate: { directory: 'cmd-vars' },
                 },
                 {
                     label: 'Widgets',
+                    collapsed: true,
                     autogenerate: { directory: 'widgets' },
                 },
             ],
