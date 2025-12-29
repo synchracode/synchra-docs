@@ -1,0 +1,30 @@
+---
+title: Title
+description: Variables to display or update the stream title.
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+### `{title}`
+
+Returns the stream's current title.
+
+<Aside type="note" title="Example response">
+`My awesome title`
+</Aside>
+
+### `{set_title}`
+
+Lets users change the stream title by passing in text after the command.
+
+<Aside type="tip" title="Usage">
+`Title changed to: {set_title}`
+</Aside>
+
+### `{set_title <value>}`
+
+Sets a title with a default value. Can be overridden by users passing in text after the command.
+
+<Aside type="tip" title="Usage">
+`Title changed to: {set_title An even better title}`
+</Aside>

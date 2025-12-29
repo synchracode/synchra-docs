@@ -1,0 +1,36 @@
+---
+title: Random
+description: Variables to generate random numbers or choices.
+---
+
+import { Aside } from "@astrojs/starlight/components";
+
+### `{random.int [min/max] [max]}`
+
+Min/max works as defaults. They can be overridden when writing the command: `!random 123` would generate a number between 1 and 123.
+
+<Aside type="tip" title="Usage">
+`{random.int}` - generates a random integer between 1 and 100.  
+`{random.int 10}` - generates a random integer between 1 and 10.  
+`{random.int 100 200}` - generates a random integer between 100 and 200.  
+</Aside>
+
+<Aside type="note" title="Example response">
+  `113`
+</Aside>
+
+### `{random.choice} [options...]`
+
+Options works as default choices. They can be overridden when writing the command: `!random_choice optionA optionB optionC` would choose between those three options.
+
+<Aside type="tip" title="Usage">
+`{random.choice option1 "option 2" "option 3"}`
+</Aside>
+
+<Aside type="caution">
+  Make sure to wrap options containing spaces in quotes.
+</Aside>
+
+<Aside type="note" title="Example response">
+  `option 2`
+</Aside>

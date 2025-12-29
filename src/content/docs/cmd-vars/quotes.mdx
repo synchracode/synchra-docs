@@ -1,0 +1,61 @@
+---
+title: Quotes
+description: Variables to manage and display quotes.
+---
+
+import { Aside } from "@astrojs/starlight/components";
+
+## Manage quotes
+
+### `{quote.add}`
+
+<Aside type="note" title="Example response">
+  `Quote created with number: x`
+</Aside>
+
+### `{quote.edit}`
+
+<Aside type="note" title="Example response">
+  `Quote updated`
+</Aside>
+
+### `{quote.delete}`
+
+<Aside type="note" title="Example response">
+  `Quote deleted`
+</Aside>
+
+## Display a quote
+
+Using `!<cmd>` without a number returns a **random** quote.
+If a number is provided as the first argument, it returns that specific quote.
+
+### Full example command
+
+<Aside type="tip" title="Usage">
+  `"{quote.message}" ({quote.date}, id: {quote.number}, by: {quote.user})`
+</Aside>
+
+### `{quote.message}`
+
+<Aside type="note" title="Example response">
+  `"This is a sample quote."`
+</Aside>
+
+### `{quote.number}`
+
+<Aside type="note" title="Example response">
+  `42`
+</Aside>
+
+### `{quote.user}`
+
+<Aside type="note" title="Example response">
+  `SomeUser`
+</Aside>
+
+### `{quote.date}`
+
+<Aside type="note" title="Example response">
+  `2024-01-15`
+</Aside>

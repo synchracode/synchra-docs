@@ -1,0 +1,44 @@
+---
+title: Count
+description: Variables to manage counters for deaths, wins, etc.
+---
+
+import { Aside } from "@astrojs/starlight/components";
+
+The count variable lets you and your chat keep track of a number that can be increased or decreased with commands.
+Be it deaths, kills, rounds won, times a thing has been written in chat or anything else you can think of.
+
+### `{count <counter_name>}`
+
+Displays the current count.
+
+<Aside type="note" title="Example response">
+  `6`
+</Aside>
+
+### `{count.inc <counter_name> [-/+amount]}`
+
+Increases or decreases the count by the specified amount (default is 1).
+You can use e.g. `-5` to decrease the count by 5. 
+Amount works as a default, you can also specify it in the command itself.
+
+<Aside type="note" title="Example response">
+  `7`
+</Aside>
+
+<Aside type="tip" title="Example usage">
+  `Death count: {count.inc deaths 1}`
+</Aside>
+
+### `{count.set <counter_name> [amount]}`
+
+Sets the count to a specific amount. Use it for example to reset the count to 0.
+The amount can also be specifed in the command itself.
+
+<Aside type="note" title="Example response">
+  `4`
+</Aside>
+
+<Aside type="tip" title="Example usage">
+  `Death count set to: {count.set deaths 0}`
+</Aside>

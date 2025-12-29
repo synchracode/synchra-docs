@@ -1,0 +1,56 @@
+---
+title: Faceit
+description: Variables to display Faceit stats like level and ELO.
+---
+
+import { Aside } from "@astrojs/starlight/components";
+
+These variables let you display a user’s Faceit stats like level and ELO.
+
+<Aside type="tip" title="Full usage example">
+    `Faceit level: {faceit.level} ({faceit.elo} elo) – {faceit.next_level_points} elo needed for level {faceit.next_level} {faceit.username YourFaceitUsername}`
+</Aside>
+
+### `{faceit.username <name>}`
+
+Set the default Faceit username to lookup.
+
+<Aside type="tip" title="Example usage">
+`Faceit level: {faceit.level} ({faceit.elo} elo) {faceit.username YourFaceitUsername}`
+</Aside>
+
+### `{faceit.elo}`
+
+Shows the user's current Faceit ELO rating.
+
+<Aside type="note" title="Example response">
+  `1024`
+</Aside>
+
+### `{faceit.level}`
+
+Shows the user's Faceit level (from 1 to 10).
+
+<Aside type="note" title="Example response">
+  `6`
+</Aside>
+
+### `{faceit.next_level_points}`
+
+Shows how many more ELO points the user needs to reach the next Faceit level.
+
+<Aside type="note" title="Example response">
+  `150`
+</Aside>
+
+<Aside type="tip" title="Example usage">
+  `{faceit.next_level_points} ELO needed to reach level {faceit.next_level}`
+</Aside>
+
+### `{faceit.next_level}`
+
+Shows the next Faceit level the user is working toward.
+
+<Aside type="note" title="Example response">
+  `7`
+</Aside>

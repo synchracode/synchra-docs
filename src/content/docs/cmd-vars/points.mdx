@@ -1,0 +1,68 @@
+---
+title: Points
+description: Variables to manage and display user points.
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+### `{points_name}`
+
+Returns the name of the points used in the system.
+
+<Aside type="note" title="Example response">
+`DXP`
+</Aside>
+
+### `{points}`
+
+Returns the amount of points a user currently has.
+
+<Aside type="note" title="Example response">
+`150`
+</Aside>
+
+### `{points_rank}`
+
+Returns the user’s current rank on the points leaderboard.
+
+<Aside type="note" title="Example response">
+`2`
+</Aside>
+
+### `{total_point_users}`
+
+Returns how many users are currently on the points leaderboard.
+
+<Aside type="note" title="Example response">
+`5003`
+</Aside>
+
+### `{points_ranking}`
+
+Returns the top 5 users on the points leaderboard.
+
+<Aside type="note" title="Example response">
+1. John - 300 DXP
+2. Alice - 290 DXP
+3. Bob - 280 DXP
+4. Eve - 270 DXP
+5. Carol - 260 DXP
+</Aside>
+
+### `{give_points}`
+
+Allows one user to give points to another user.
+Returns a message showing who gave points to whom.
+
+<Aside type="note" title="Example response">
+`JohnDoe gave 50 DXP to JaneDoe.`
+</Aside>
+
+### `{add_points}`
+
+Allows an admin (or authorized user) to add points to a user from an unlimited pool.
+Returns a message confirming the points were added to the user.
+
+<Aside type="note" title="Example response">
+`JaneDoe now has 150 DXP.`
+</Aside>

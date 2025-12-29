@@ -1,0 +1,81 @@
+---
+title: Weather
+description: Variables to display weather information.
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+## Full example command
+
+<Aside type="tip" title="Example usage">
+`It's currently {weather.temp}°C in {weather.city} with {weather.description} {weather.lookup_city Stockholm} {weather.units metric}`
+</Aside>
+
+### `{weather.lookup_city <city>}`
+
+Sets a default lookup city for the command.
+Useful when you want the command to always return weather for a specific location.
+
+Returns an empty string (used only to set the location, not display it).
+
+<Aside type="tip" title="Example usage">
+`{weather.lookup_city Aarhus}`
+</Aside>
+
+
+### `{weather.units metric}` `{weather.units imperial}`
+
+Sets the temperature unit system.
+
+- `metric` for Celsius (default)
+- `imperial` for Fahrenheit
+
+Returns an empty string (used to change units, not to display them).
+
+### `{weather.temp}`
+
+Returns the current temperature.
+
+<Aside type="note" title="Example response">
+`23`
+</Aside>
+
+### `{weather.temp_min}`
+
+Returns the minimum temperature forecasted.
+
+<Aside type="note" title="Example response">
+`17`
+</Aside>
+
+### `{weather.temp_max}`
+
+Returns the maximum temperature forecasted.
+
+<Aside type="note" title="Example response">
+`28`
+</Aside>
+
+### `{weather.description}`
+
+Returns a short description of the current weather.
+
+<Aside type="note" title="Example response">
+`light rain`
+</Aside>
+
+### `{weather.city}`
+
+Returns the name of the city currently being looked up.
+
+<Aside type="note" title="Example response">
+`Aarhus`
+</Aside>
+
+### `{weather.wind_speed}`
+
+Returns the current wind speed.
+
+<Aside type="note" title="Example response">
+`4.6`
+</Aside>

@@ -1,16 +1,21 @@
 ---
 title: Time
+description: Variable to display current time in a specific timezone.
 ---
 
-### `{time Europe/Copenhagen}`  
-### `{time CET}`
+import { Aside } from "@astrojs/starlight/components";
+
+### `{time <timezone>}`
+
+<Aside type="tip" title="Example usage">
+`The current time in Tokyo is {time Asia/Tokyo}`
+</Aside>
 
 Returns the current time in the given timezone.
 
-**Example response:**  
-`16:00`
-
----
+<Aside type="note" title="Example response">
+  `16:00`
+</Aside>
 
 ## Valid Timezones
 
@@ -77,11 +82,11 @@ Africa/Windhoek
 America/Adak
 America/Anchorage
 America/Anguilla
-...
-(Full list continues here as needed)
-...
 UTC
 Universal
 W-SU
 WET
 Zulu
+```
+
+</details>

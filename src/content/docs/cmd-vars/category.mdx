@@ -1,0 +1,37 @@
+---
+title: Category
+description: Variables to display or update the stream category/game.
+---
+
+import { Aside } from "@astrojs/starlight/components";
+
+These variables let you show or change the current stream category (also known as the game or topic).
+
+### `{category}`
+
+Displays the current stream category.
+
+<Aside type="note" title="Example response">
+  `Counter-Strike 2`
+</Aside>
+
+### `{set_category}`
+
+Sets the category to whatever the user types after the command.
+
+<Aside type="note" title="Example response">
+  `Counter-Strike 2`
+</Aside>
+
+<Aside type="tip" title="Example usage">
+  `Category changed to: {set_category}`
+</Aside>
+
+### `{set_category <value>}`
+
+Set a default category. Can be overridden by users passing in text after the command.
+Use it to make a command that changes to a specific category, e.g. !anno
+
+<Aside type="tip" title="Example usage">
+  `Category changed to: {set_category Anno 1800}`
+</Aside>

@@ -1,27 +1,32 @@
 ---
 title: Accountage
+description: Variables to display user account age and creation date.
 ---
+
+import { Aside } from '@astrojs/starlight/components';
 
 These variables let you show when a user’s account was created, or how long it has existed.
 
-### `{accountage}`  
+### `{accountage}`
+
 Displays the full age of the user’s account in years, months, days, and hours.
 
-**Example response:**  
+<Aside type="note" title="Example response">
 `5 years 8 months 13 days 2 hours`
+</Aside>
 
----
+### `{accountage_date}`
 
-### `{accountage_date}`  
 Shows the exact date the account was created (in `YYYY-MM-DD` format).
 
-**Example response:**  
+<Aside type="note" title="Example response">
 `2013-06-03`
+</Aside>
 
----
+### `{accountage_datetime}`
 
-### `{accountage_datetime}`  
 Shows the full date and time the account was created (in UTC).
 
-**Example response:**  
+<Aside type="note" title="Example response">
 `2013-06-03 19:12:02 UTC`
+</Aside>

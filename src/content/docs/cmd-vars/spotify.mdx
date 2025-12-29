@@ -1,0 +1,62 @@
+---
+title: Spotify
+description: Variables to display current song information from Spotify.
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+## Full example command
+
+<Aside type="tip" title="Usage">
+`Playing: "{spotify.song_name}" by {spotify.song_artists} ({spotify.song_progress}/{spotify.song_duration})`
+</Aside>
+
+## `{spotify.song_name}`
+
+<Aside type="note" title="Example response">
+`Song Title`
+</Aside>
+
+## `{spotify.song_artists}`
+
+<Aside type="note" title="Example response">
+`Artist1, Artist2`
+</Aside>
+
+## `{spotify.song_progress}`
+
+<Aside type="note" title="Example response">
+`0:42`
+</Aside>
+
+## `{spotify.song_duration}`
+
+<Aside type="note" title="Example response">
+`2:30`
+</Aside>
+
+## `{spotify.prev_song_name}`
+
+<Aside type="note" title="Example response">
+`Previous Song Title`
+</Aside>
+
+## `{spotify.prev_song_artists}`
+
+Comma separated list of the artists of the previous song.
+
+<Aside type="note" title="Example response">
+`Artist1, Artist2`
+</Aside>
+
+## `{spotify.playlist_name}`
+
+<Aside type="note" title="Example response">
+`My Favorite Playlist`
+</Aside>
+
+## `{spotify.playlist_url}`
+
+<Aside type="note" title="Example response">
+`https://open.spotify.com/playlist/123`
+</Aside>

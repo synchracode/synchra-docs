@@ -1,17 +1,18 @@
 ---
-id: permit_manager
 title: Permit manager
+description: Variable to temporarily allow users to post links.
 ---
+
+import { Aside } from '@astrojs/starlight/components';
 
 Use `{permit_manager}` to allow a user to post a link for a limited time.
-
----
 
 ### How it works
 
 The permit lasts for 60 seconds and lets the specified user post links without restrictions.
 
-**Example command:**  
+<Aside type="tip" title="Example command">
 `!permit <user>`
+</Aside>
 
 When you use this command, the specified user will be allowed to post links for the next 60 seconds.
