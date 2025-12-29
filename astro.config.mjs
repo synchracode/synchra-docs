@@ -37,9 +37,8 @@ export default defineConfig({
                     slug: 'getting-started',
                 },
                 {
-                    label: 'Command vars',
-                    collapsed: true,
-                    autogenerate: { directory: 'cmd-vars' },
+                    label: 'Custom Bot Name',
+                    slug: 'custom-bot-name',
                 },
                 {
                     label: 'Widgets',
@@ -47,8 +46,9 @@ export default defineConfig({
                     autogenerate: { directory: 'widgets' },
                 },
                 {
-                    label: 'Custom Bot Name',
-                    slug: 'custom-bot-name',
+                    label: 'Command vars',
+                    collapsed: true,
+                    autogenerate: { directory: 'cmd-vars' },
                 },
             ],
         }),
