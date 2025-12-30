@@ -1,5 +1,6 @@
 ---
-title: Multi-chat Widget
+title: Multi-chat Widget Styling
+description: Customize the appearance of the Synchra Multi-chat Widget with CSS for your Twitch, YouTube, Kick and TikTok chat.
 ---
 
 With Synchra's Multi-chat Widget you can very easily display your combined chat in OBS or anything else that supports a browser source. It supports Twitch, YouTube, TikTok and Kick.
@@ -46,5 +47,68 @@ The Chat Widget can be styled using custom CSS. You can target specific elements
   background: linear-gradient(145deg, #1a0736, #31176a);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5), inset 0 0 12px rgba(190, 150, 255, 0.25),
     inset 0 0 4px rgba(255, 255, 255, 0.1);
+}
+```
+
+## Examples
+
+### World of Warcraft like chat
+
+```css
+.chat-message-icons {
+  display: none;
+}
+
+.chat-message-container span {
+  color: var(--color-text) !important;
+  font-weight: 500;
+}
+
+.chat-message-username::before {
+  content: "[";
+}
+
+.chat-message-username::after {
+  content: "] says";
+}
+
+.chat-message-container[data-badges~="subscriber"] span {
+  color: #32bb37 !important;
+}
+
+.chat-message-container[data-badges~="subscriber"]
+  .chat-message-username::before {
+  content: "[Guild] [";
+}
+
+.chat-message-container[data-badges~="subscriber"]
+  .chat-message-username::after {
+  content: "]";
+}
+
+.chat-message-container[data-badges~="vip"] span {
+  color: #7d77b3 !important;
+}
+
+.chat-message-container[data-badges~="vip"] .chat-message-username::before {
+  content: "[Party] [";
+}
+
+.chat-message-container[data-badges~="vip"] .chat-message-username::after {
+  content: "]";
+}
+
+.chat-message-container[data-badges~="moderator"] span {
+  color: #d46728 !important;
+}
+
+.chat-message-container[data-badges~="moderator"]
+  .chat-message-username::before {
+  content: "[Raid Leader] [";
+}
+
+.chat-message-container[data-badges~="moderator"]
+  .chat-message-username::after {
+  content: "]";
 }
 ```
