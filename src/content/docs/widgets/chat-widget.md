@@ -54,13 +54,16 @@ The Chat Widget can be styled using custom CSS. You can target specific elements
 
 ### World of Warcraft like chat
 
+<details>
+<summary>View CSS</summary>
+
 ```css
 .chat-message-icons {
   display: none;
 }
 
 .chat-message-container span {
-  color: var(--color-text) !important;
+  color: var(--text-color) !important;
   font-weight: 500;
 }
 
@@ -112,3 +115,5 @@ The Chat Widget can be styled using custom CSS. You can target specific elements
   content: "]";
 }
 ```
+
+</details>
