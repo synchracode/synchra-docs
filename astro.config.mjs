@@ -11,7 +11,7 @@ export default defineConfig({
     base: '/docs',
     integrations: [
         umami({
-            id: '74183a31-f5c6-48f2-9ed0-02667780c01e',
+            id: 'a529a4cc-4f5a-4ed5-84c8-0864c611f15a',
             endpointUrl: 'https://a.synchra.net',
         }),
         icon(),
