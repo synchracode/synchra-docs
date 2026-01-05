@@ -28,6 +28,10 @@ export default defineConfig({
                             label: 'Dashboard',
                             href: 'https://dash.synchra.net',
                         },
+                        {
+                            label: 'Status',
+                            href: 'https://status.synchra.net',
+                        },
                     ],
                 }),
             ],
