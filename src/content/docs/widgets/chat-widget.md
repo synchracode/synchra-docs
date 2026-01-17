@@ -10,7 +10,10 @@ You can customize it to your liking with simple settings and custom CSS in the [
 
 The Chat Widget can be styled using custom CSS. You can target specific elements using the classes below and customize appearance.
 
-### Available CSS Classes
+###
+
+<details>
+<summary>CSS Classes</summary>
 
 | Class                          | Description                                     |
 | ------------------------------ | ----------------------------------------------- |
@@ -25,7 +28,10 @@ The Chat Widget can be styled using custom CSS. You can target specific elements
 | `.chat-message-provider-logo`  | Platform logo (Twitch, YouTube, etc.)           |
 | `.chat-message-meta-container` | Platform, Badges, Timestamp, username conatiner |
 
-### CSS Variables
+</details>
+
+<details>
+<summary>CSS Variables</summary>
 
 | Variable                   | Description             | Example           |
 | -------------------------- | ----------------------- | ----------------- |
@@ -37,6 +43,8 @@ The Chat Widget can be styled using custom CSS. You can target specific elements
 | `--background-color`       | Background color        | `#1a1a1a`         |
 | `--text-shadow-color`      | Text shadow color       | `rgba(0,0,0,0.5)` |
 | `--chat-widget-size-scale` | Size scaling factor     | `1`               |
+
+</details>
 
 ### Example Usage
 
@@ -51,6 +59,8 @@ The Chat Widget can be styled using custom CSS. You can target specific elements
     inset 0 0 4px rgba(255, 255, 255, 0.1);
 }
 ```
+
+</details>
 
 ## Examples
 
