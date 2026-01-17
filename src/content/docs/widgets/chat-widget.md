@@ -45,12 +45,44 @@ The Chat Widget can be styled using custom CSS. You can target specific elements
   padding: 1rem 1.25rem;
   border-radius: 12px;
   background: linear-gradient(145deg, #1a0736, #31176a);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5), inset 0 0 12px rgba(190, 150, 255, 0.25),
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.5),
+    inset 0 0 12px rgba(190, 150, 255, 0.25),
     inset 0 0 4px rgba(255, 255, 255, 0.1);
 }
 ```
 
 ## Examples
+
+### Custom size
+
+If any of the predefined sizes do not fit your needs, you can customize the size of the chat widget using the `--chat-widget-size-scale` CSS variable.
+
+<details>
+<summary>View CSS</summary>
+
+```css
+.chat-container {
+  --chat-widget-size-scale: 0.67;
+}
+```
+
+</details>
+
+### Fixed chat buble width
+
+You can set a fixed width for chat bubbles to create a more uniform look.
+
+<details>
+<summary>View CSS</summary>
+
+```css
+.chat-message-container {
+  width: 400px;
+}
+```
+
+</details>
 
 ### World of Warcraft like chat
 
