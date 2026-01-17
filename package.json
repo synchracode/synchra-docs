@@ -10,11 +10,11 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/starlight": "^0.37.1",
+    "@astrojs/starlight": "^0.37.3",
     "@yeskunall/astro-umami": "^0.0.7",
-    "astro": "^5.16.6",
+    "astro": "^5.16.11",
     "astro-icon": "^1.1.5",
     "sharp": "^0.34.5",
-    "starlight-theme-nova": "^0.10.0"
+    "starlight-theme-nova": "^0.11.5"
   }
 }
