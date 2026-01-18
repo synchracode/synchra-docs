@@ -33,16 +33,16 @@ The Chat Widget can be styled using custom CSS. You can target specific elements
 <details>
 <summary>CSS Variables</summary>
 
-| Variable                   | Description             | Example           |
-| -------------------------- | ----------------------- | ----------------- |
-| `--text-color`             | Text color              | `#efeff0`         |
-| `--border-radius`          | Corner roundness        | `8px`             |
-| `--border-color`           | Border color            | `#333`            |
-| `--border-width`           | Border thickness        | `2px`             |
-| `--background-opacity`     | Background transparency | `0.8`             |
-| `--background-color`       | Background color        | `#1a1a1a`         |
-| `--text-shadow-color`      | Text shadow color       | `rgba(0,0,0,0.5)` |
-| `--chat-widget-size-scale` | Size scaling factor     | `1`               |
+| Variable               | Description             | Example           |
+| ---------------------- | ----------------------- | ----------------- |
+| `--text-color`         | Text color              | `#efeff0`         |
+| `--border-radius`      | Corner roundness        | `8px`             |
+| `--border-color`       | Border color            | `#333`            |
+| `--border-width`       | Border thickness        | `2px`             |
+| `--background-opacity` | Background transparency | `0.8`             |
+| `--background-color`   | Background color        | `#1a1a1a`         |
+| `--text-shadow-color`  | Text shadow color       | `rgba(0,0,0,0.5)` |
+| `--chat-size-scale`    | Size scaling factor     | `1`               |
 
 </details>
 
@@ -73,7 +73,7 @@ If any of the predefined sizes do not fit your needs, you can customize the size
 
 ```css
 .chat-container {
-  --chat-widget-size-scale: 0.67;
+  --chat-size-scale: 0.67;
 }
 ```
 
