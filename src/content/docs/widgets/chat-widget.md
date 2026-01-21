@@ -15,18 +15,23 @@ The Chat Widget can be styled using custom CSS. You can target specific elements
 <details>
 <summary>CSS Classes</summary>
 
-| Class                          | Description                                     |
-| ------------------------------ | ----------------------------------------------- |
-| `.chat-message-container`      | Individual message container                    |
-| `.chat-messages-container`     | Main container for all chat messages            |
-| `.chat-container`              | Outer wrapper for chat messages                 |
-| `.chat-message-text`           | The actual message text content                 |
-| `.chat-message-username`       | Username display                                |
-| `.chat-message-mention`        | @mentions within messages                       |
-| `.chat-message-link`           | Links within messages                           |
-| `.chat-message-timestamp`      | Message timestamp                               |
-| `.chat-message-provider-logo`  | Platform logo (Twitch, YouTube, etc.)           |
-| `.chat-message-meta-container` | Platform, Badges, Timestamp, username conatiner |
+| Class                            | Description                                     |
+| -------------------------------- | ----------------------------------------------- |
+| `.chat-container`                | Outer wrapper for chat messages                 |
+| `.chat-messages-container`       | Main container for all chat messages            |
+| `.chat-message-container`        | Individual message container                    |
+| `.chat-message-meta-container`   | Platform, Badges, Timestamp, username conatiner |
+| `.chat-message-icons-container`  | Container for platform and badge icons          |
+| `.chat-message-provider-logo`    | Platform logo (Twitch, YouTube, etc.)           |
+| `.chat-message-badges-container` | User badges (subscriber, moderator, etc.)       |
+| `.chat-message-badge`            | User badge                                      |
+| `.chat-message-username`         | Username display                                |
+| `.chat-message-separator`        | Separator between username and message          |
+| `.chat-message-text`             | The actual message text content                 |
+| `.chat-message-mention`          | @mentions within messages                       |
+| `.chat-message-link`             | Links within messages                           |
+| `.chat-message-emote`            | Emotes within messages                          |
+| `.chat-message-gift-count`       | Gift count display (e.g., "1.000" for bits)     |
 
 </details>
 
@@ -100,7 +105,7 @@ You can set a fixed width for chat bubbles to create a more uniform look.
 <summary>View CSS</summary>
 
 ```css
-.chat-message-icons {
+.chat-message-icons-container {
   display: none;
 }
 
@@ -118,7 +123,7 @@ You can set a fixed width for chat bubbles to create a more uniform look.
 }
 
 .chat-message-container[data-badges~="subscriber"] span {
-  color: #32bb37 !important;
+  color: #70c973 !important;
 }
 
 .chat-message-container[data-badges~="subscriber"]
@@ -132,7 +137,7 @@ You can set a fixed width for chat bubbles to create a more uniform look.
 }
 
 .chat-message-container[data-badges~="vip"] span {
-  color: #7d77b3 !important;
+  color: #b0abe4 !important;
 }
 
 .chat-message-container[data-badges~="vip"] .chat-message-username::before {
@@ -144,7 +149,7 @@ You can set a fixed width for chat bubbles to create a more uniform look.
 }
 
 .chat-message-container[data-badges~="moderator"] span {
-  color: #d46728 !important;
+  color: #e39162 !important;
 }
 
 .chat-message-container[data-badges~="moderator"]
