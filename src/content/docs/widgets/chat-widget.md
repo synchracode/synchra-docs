@@ -100,6 +100,7 @@ You can set a fixed width for chat bubbles to create a more uniform look.
 </details>
 
 ### World of Warcraft like chat
+Displays of how to manipulate text depending on what badges the user has.
 
 <details>
 <summary>View CSS</summary>
